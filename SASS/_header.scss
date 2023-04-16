@@ -1,0 +1,91 @@
+header {
+    background-color: $primary-color;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+
+        h1 {
+            font-size: 44px;
+            margin: 20px auto;
+
+            .special-title {
+            color: #ecb22e;
+            }
+        }
+
+        p {
+            letter-spacing: 1.5px;
+            margin: auto 10px;
+            font-size: 15px;
+        }
+
+        .header-buttons {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin: 30px 25px;
+            
+
+            button {
+                margin-top: 1%;
+                padding: 18px 60px;
+                text-transform: uppercase;
+                font-weight: bold;
+                letter-spacing: 1.5px;
+            }
+
+            .mail-button {
+                background-color: #FFF;
+                border: #FFF;
+                border-radius: 5px;
+                margin-bottom: 5px;
+            }
+
+            .google-button {
+                background-color: #4285f4;
+                border: #4285f4;
+                border-radius: 5px;
+                color: #FFF;
+            }
+        }
+
+        .final-header-description {
+            display: none;
+        }
+}
+
+@media (min-width: 1200px) {
+    header {
+        text-align: left;
+    
+        h1 {
+            font-size: 56px;
+            font-weight: 900;
+        }
+
+        .main-section {
+            display: flex;
+            justify-content: space-around;
+            margin: 3% 15%;
+            align-items: center;
+        }
+
+        .main-section-titles {
+            width: 40%;
+        }
+        
+        .header-buttons {
+            margin: 30px 0px;
+        }
+
+        .final-header-description {
+            display: block;
+
+            p {
+                font-weight: bold;
+            }
+        }
+    }
+}

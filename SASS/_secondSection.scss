@@ -1,0 +1,153 @@
+.trusting-companies-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+    text-align: center;
+
+    h2 {
+        margin-top: 45px;
+        font-size: 38px;
+    }
+
+    .enterprise-buttons {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        button {
+            padding: 20px 50px;
+            border: none;
+            border-radius: 5px;
+            text-transform: uppercase;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+        
+        .enterprise-button {
+            background-color: $second-color;
+            color: #FFF;
+        }    
+
+        .sales-button {
+            background-color: #FFF;
+            border: 1px solid $third-color;
+        }
+    }
+
+    .percentages {
+
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        width: 50%;
+        margin-bottom: 60px;
+
+        h4 {
+            font-size: 45px;
+            color: $third-color;
+            font-weight: bold;
+        }
+
+        p {
+            font-size: 14px;
+            text-align: center;
+        }
+    }
+}
+
+.t-mobile-interview {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    width: 100%;
+    padding: 20px;
+
+    .interview-text {
+        margin-top: 25px;
+        font-style: italic;
+        font-size: 19px;
+        letter-spacing: 0.8px;
+    }
+
+    .interview-person {
+        margin-top: 15px;
+    }
+
+    .interview-person span {
+        font-weight: bold;
+    }
+
+    a {
+        display: block;
+        margin-top: 12px;
+        text-decoration: none;
+        font-weight: bold;
+        letter-spacing: 0.9px;
+        color: #1264a3;
+    }
+}
+
+.bottom-interview-article {
+    text-align: center;
+    margin: 20px;
+    font-size: 12.5px;
+}
+
+@media (min-width: 1200px) {
+
+    .trusting-companies-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    .enterprise-buttons {
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 2.5%;
+    }
+
+    .percentages {
+        justify-content: space-around;
+        flex-direction: row;
+        gap: 200px;
+
+        h4 {
+            font-size: 68px;
+        }
+    }
+}
+
+    .t-mobile-interview {
+        flex-direction: row;
+        justify-content: space-around;
+        width: 95%;
+
+        img {
+            margin-left: 10%;
+        }
+
+        .interview {
+            display: flex;
+            flex-direction: column;
+
+            .interview-text {
+                font-size: 22px;
+                margin-bottom: 3%;
+            }
+
+            a {
+                margin-top: 2%;
+                letter-spacing: 1.1px;
+                font-weight: bold;
+            }
+        }
+    }
+
+    .bottom-interview-article {
+        margin-top: 4%;
+    }
+}

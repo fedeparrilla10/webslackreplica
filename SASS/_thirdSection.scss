@@ -1,0 +1,126 @@
+.boxes-images-container {
+    background-color: $fourth-color;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    h2 {
+        margin-top: 15%;
+    }
+
+    .box1 {
+        display: flex;
+        flex-direction: column;
+        border: 15px solid #FFF;
+        gap: 10px;
+        background-color: #FFF; 
+        margin: 0 9% 15% 9%;
+
+       p, h4, a {
+        text-align: left;
+        padding-left: 10px;
+       }
+
+       p {
+        font-size: 14.5px;
+       }
+
+       h4 {
+        width: 95%;
+        font-size: 22px;
+       }
+
+       a {
+        display: block;
+        margin-top: 35px;
+        text-align: left;
+        text-decoration: none;
+        color: #1264a3;
+        text-transform: uppercase;
+        font-weight: bold;
+
+        span {
+            margin-left: 25px;
+        }
+       }
+    }
+
+    .box2,
+    .box3,
+    .box4 {
+        display: none;
+    }
+}
+
+@media (min-width: 1200px) {
+    .boxes-images-container {
+        background-color: $fourth-color;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+        h2 {
+            margin-top: 3%;
+            font-size: 38px;
+        }
+
+        .boxes-gallery {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+            gap: 5%;
+        }
+        
+        .box1,
+        .box2,
+        .box3,
+        .box4 {
+            display: flex;
+            flex-direction: column;
+            border: 1px solid #FFF;
+            gap: 20px;
+            background-color: #FFF; 
+            margin: 3% 3%;
+            padding: 1%;
+
+            img {
+                height: 160px;
+                width: 280px;
+            }
+    
+           p, h4, a {
+            text-align: left;
+            padding-left: 10px;
+           }
+    
+           p {
+            font-size: 14.5px;
+           }
+    
+           h4 {
+            width: 95%;
+            font-size: 22px;
+           }
+    
+           a {
+            display: block;
+            margin-top: 35px;
+            text-align: left;
+            text-decoration: none;
+            color: #1264a3;
+            text-transform: uppercase;
+            font-weight: bold;
+    
+            span {
+                margin-left: 25px;
+            }
+           }
+        }
+    }
+}
